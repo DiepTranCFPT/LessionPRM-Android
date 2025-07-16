@@ -16,7 +16,7 @@ public class LoginRequest {
     public void setPassword(String password) { this.password = password; }
 }
 
-class LoginResponse {
+public class LoginResponse {
     private String token;
     private String refreshToken;
     private User user;
@@ -40,7 +40,7 @@ class LoginResponse {
     public void setMessage(String message) { this.message = message; }
 }
 
-class RegisterRequest {
+public class RegisterRequest {
     private String fullName;
     private String email;
     private String password;
@@ -67,7 +67,7 @@ class RegisterRequest {
     public void setPhone(String phone) { this.phone = phone; }
 }
 
-class RegisterResponse {
+public class RegisterResponse {
     private boolean success;
     private String message;
     private User user;
@@ -81,4 +81,15 @@ class RegisterResponse {
     
     public User getUser() { return user; }
     public void setUser(User user) { this.user = user; }
+}
+
+public class RefreshRequest {
+    private String refreshToken;
+    
+    public RefreshRequest(String refreshToken) {
+        this.refreshToken = refreshToken;
+    }
+    
+    public String getRefreshToken() { return refreshToken; }
+    public void setRefreshToken(String refreshToken) { this.refreshToken = refreshToken; }
 }

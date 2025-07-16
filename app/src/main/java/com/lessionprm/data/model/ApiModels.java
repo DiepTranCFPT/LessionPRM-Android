@@ -1,18 +1,8 @@
 package com.lessionprm.data.model;
 
 // Missing classes for API completeness
-class RefreshRequest {
-    private String refreshToken;
-    
-    public RefreshRequest(String refreshToken) {
-        this.refreshToken = refreshToken;
-    }
-    
-    public String getRefreshToken() { return refreshToken; }
-    public void setRefreshToken(String refreshToken) { this.refreshToken = refreshToken; }
-}
 
-class UserProfileResponse {
+public class UserProfileResponse {
     private User user;
     private boolean success;
     private String message;
@@ -27,7 +17,7 @@ class UserProfileResponse {
     public void setMessage(String message) { this.message = message; }
 }
 
-class UpdateProfileRequest {
+public class UpdateProfileRequest {
     private String fullName;
     private String phone;
     
@@ -43,7 +33,7 @@ class UpdateProfileRequest {
     public void setPhone(String phone) { this.phone = phone; }
 }
 
-class UpdateProfileResponse {
+public class UpdateProfileResponse {
     private User user;
     private boolean success;
     private String message;
@@ -59,7 +49,7 @@ class UpdateProfileResponse {
 }
 
 // Payment models
-class CreatePaymentRequest {
+public class CreatePaymentRequest {
     private Long courseId;
     private Double amount;
     private String description;
@@ -80,7 +70,7 @@ class CreatePaymentRequest {
     public void setDescription(String description) { this.description = description; }
 }
 
-class MoMoPaymentResponse {
+public class MoMoPaymentResponse {
     private String payUrl;
     private String orderId;
     private boolean success;
@@ -99,7 +89,7 @@ class MoMoPaymentResponse {
     public void setMessage(String message) { this.message = message; }
 }
 
-class PaymentStatusResponse {
+public class PaymentStatusResponse {
     private String status;
     private String orderId;
     private Double amount;
@@ -123,7 +113,7 @@ class PaymentStatusResponse {
 }
 
 // Admin models
-class StatisticsResponse {
+public class StatisticsResponse {
     private int totalUsers;
     private int totalCourses;
     private int totalEnrollments;
@@ -150,7 +140,7 @@ class StatisticsResponse {
     public void setMessage(String message) { this.message = message; }
 }
 
-class MonthlyRevenueResponse {
+public class MonthlyRevenueResponse {
     private java.util.List<MonthlyRevenue> data;
     private boolean success;
     private String message;
@@ -165,7 +155,7 @@ class MonthlyRevenueResponse {
     public void setMessage(String message) { this.message = message; }
 }
 
-class MonthlyRevenue {
+public class MonthlyRevenue {
     private int month;
     private int year;
     private double revenue;
@@ -180,7 +170,7 @@ class MonthlyRevenue {
     public void setRevenue(double revenue) { this.revenue = revenue; }
 }
 
-class CreateCourseRequest {
+public class CreateCourseRequest {
     private String title;
     private String description;
     private String shortDescription;
@@ -211,6 +201,6 @@ class CreateCourseRequest {
     public void setLevel(String level) { this.level = level; }
 }
 
-class UpdateCourseRequest extends CreateCourseRequest {
+public class UpdateCourseRequest extends CreateCourseRequest {
     // Same fields as CreateCourseRequest
 }
