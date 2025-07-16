@@ -191,7 +191,8 @@ public class CourseDetailActivity extends AppCompatActivity {
             // Paid course - go to payment
             Intent intent = new Intent(this, PaymentActivity.class);
             intent.putExtra("courseId", currentCourse.getId());
-            intent.putExtra("amount", currentCourse.getPrice().floatValue());
+            intent.putExtra("amount", currentCourse.getPrice());
+            intent.putExtra("courseName", currentCourse.getTitle());
             startActivity(intent);
         } else {
             // Free course - enroll directly
