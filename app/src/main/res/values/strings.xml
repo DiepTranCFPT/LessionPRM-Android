@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">LessionPRM</string>
+    
+    <!-- Authentication -->
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="remember_me">Ghi nhớ đăng nhập</string>
+    <string name="logout">Đăng xuất</string>
+    
+    <!-- Navigation -->
+    <string name="nav_courses">Khóa học</string>
+    <string name="nav_my_courses">Khóa học của tôi</string>
+    <string name="nav_profile">Hồ sơ</string>
+    <string name="nav_admin">Quản lý</string>
+    
+    <!-- Courses -->
+    <string name="courses">Khóa học</string>
+    <string name="course_detail">Chi tiết khóa học</string>
+    <string name="enroll_course">Đăng ký khóa học</string>
+    <string name="course_price">Giá: %s VND</string>
+    <string name="course_duration">Thời lượng: %s giờ</string>
+    <string name="search_courses">Tìm kiếm khóa học</string>
+    
+    <!-- Payment -->
+    <string name="payment">Thanh toán</string>
+    <string name="payment_method">Phương thức thanh toán</string>
+    <string name="momo_payment">Thanh toán MoMo</string>
+    <string name="payment_success">Thanh toán thành công</string>
+    <string name="payment_failed">Thanh toán thất bại</string>
+    
+    <!-- Profile -->
+    <string name="profile">Hồ sơ</string>
+    <string name="edit_profile">Chỉnh sửa hồ sơ</string>
+    <string name="settings">Cài đặt</string>
+    
+    <!-- Admin -->
+    <string name="admin_dashboard">Bảng điều khiển</string>
+    <string name="manage_courses">Quản lý khóa học</string>
+    <string name="manage_users">Quản lý người dùng</string>
+    <string name="statistics">Thống kê</string>
+    
+    <!-- Common -->
+    <string name="save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="delete">Xóa</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="add">Thêm</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="loading">Đang tải...</string>
+    <string name="error">Lỗi</string>
+    <string name="success">Thành công</string>
+    <string name="retry">Thử lại</string>
+    <string name="no_data">Không có dữ liệu</string>
+    
+    <!-- Error Messages -->
+    <string name="error_network">Lỗi kết nối mạng</string>
+    <string name="error_server">Lỗi máy chủ</string>
+    <string name="error_unauthorized">Phiên đăng nhập hết hạn</string>
+    <string name="error_forbidden">Không có quyền truy cập</string>
+    <string name="error_validation">Dữ liệu không hợp lệ</string>
+    <string name="error_email_invalid">Email không hợp lệ</string>
+    <string name="error_password_short">Mật khẩu phải có ít nhất 6 ký tự</string>
+    <string name="error_password_mismatch">Mật khẩu xác nhận không khớp</string>
+</resources>
