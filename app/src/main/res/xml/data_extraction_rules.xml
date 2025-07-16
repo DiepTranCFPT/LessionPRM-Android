@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="shared_pref" path="."/>
+        <exclude domain="shared_pref" path="jwt_token"/>
+    </cloud-backup>
+</data-extraction-rules>
