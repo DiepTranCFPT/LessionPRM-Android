@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/nav_courses">
+
+    <fragment
+        android:id="@+id/nav_courses"
+        android:name="com.lessionprm.ui.courses.CourseListFragment"
+        android:label="@string/nav_courses"
+        tools:layout="@layout/fragment_course_list" >
+        
+        <action
+            android:id="@+id/action_courses_to_course_detail"
+            app:destination="@id/courseDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_my_courses"
+        android:name="com.lessionprm.ui.courses.MyCoursesFragment"
+        android:label="@string/nav_my_courses"
+        tools:layout="@layout/fragment_my_courses" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.lessionprm.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_admin"
+        android:name="com.lessionprm.ui.admin.AdminDashboardFragment"
+        android:label="@string/nav_admin"
+        tools:layout="@layout/fragment_admin_dashboard" />
+
+    <activity
+        android:id="@+id/courseDetailActivity"
+        android:name="com.lessionprm.ui.courses.CourseDetailActivity"
+        android:label="@string/course_detail"
+        tools:layout="@layout/activity_course_detail">
+        
+        <argument
+            android:name="courseId"
+            app:argType="long" />
+    </activity>
+
+    <activity
+        android:id="@+id/paymentActivity"
+        android:name="com.lessionprm.ui.payment.PaymentActivity"
+        android:label="@string/payment"
+        tools:layout="@layout/activity_payment">
+        
+        <argument
+            android:name="courseId"
+            app:argType="long" />
+        <argument
+            android:name="amount"
+            app:argType="float" />
+    </activity>
+
+</navigation>
