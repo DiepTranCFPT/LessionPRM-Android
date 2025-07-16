@@ -42,7 +42,7 @@ public class CourseListResponse {
     public void setMessage(String message) { this.message = message; }
 }
 
-class CourseDetailResponse {
+public class CourseDetailResponse {
     private Course course;
     private boolean success;
     private String message;
@@ -57,7 +57,7 @@ class CourseDetailResponse {
     public void setMessage(String message) { this.message = message; }
 }
 
-class EnrollResponse {
+public class EnrollResponse {
     private boolean success;
     private String message;
     
